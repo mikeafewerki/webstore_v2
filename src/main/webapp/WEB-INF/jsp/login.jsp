@@ -35,12 +35,17 @@
                               method="post">
                             <fieldset>
                                 <div class='form-group'>
-                                    <input class="form-control" placeholder="User Name"
+                                    <input class="form-control" value="${cookie.userName.value}" placeholder="User Name"
                                            name='userId' type="text"/>
                                 </div>
                                 <div class="form-group">
                                     <input class='form-control' placeholder="Password"
                                            name='password' type="password" value="">
+                                </div>
+                                
+                                <div class="form-group">
+                                      <label><input name='remember' type="checkbox" value="true" ${cookie.checked.value}> Remember me </label>
+                                   
                                 </div>
                                 <input class="btn btn-lg btn-success btn-block"
                                        type="submit" value="login">

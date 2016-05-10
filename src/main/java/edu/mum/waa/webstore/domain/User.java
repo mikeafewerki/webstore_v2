@@ -15,10 +15,20 @@ import java.util.Objects;
 public class User implements Serializable{
     private String userId;
     private String password;
+    private boolean remember;
 
     public User() {
     }
 
+    public boolean isRemember() {
+        return remember;
+    }
+
+    public void setRemember(boolean remember) {
+        this.remember = remember;
+    }
+
+    
     public String getUserId() {
         return userId;
     }
